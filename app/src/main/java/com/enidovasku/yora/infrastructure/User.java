@@ -53,7 +53,7 @@ public class User {
         return isLoggedIn;
     }
 
-    public void setIsLoggedIn(boolean isLoggedIn) {
+    public void setLoggedIn(boolean isLoggedIn) {
         this.isLoggedIn = isLoggedIn;
     }
 

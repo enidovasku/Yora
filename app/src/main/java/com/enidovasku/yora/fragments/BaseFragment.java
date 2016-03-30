@@ -1,7 +1,17 @@
 package com.enidovasku.yora.fragments;
 
-/**
- * Created by enido on 16-03-29.
- */
-public class BaseFragment {
+import android.app.Fragment;
+import android.os.Bundle;
+
+import com.enidovasku.yora.infrastructure.YoraApplication;
+
+public abstract class BaseFragment extends Fragment{
+    protected YoraApplication application;
+
+    @Override
+    public void onCreate(Bundle savedState){
+        super.onCreate(savedState);
+
+        application = (YoraApplication) getActivity().getApplication();
+    }
 }

@@ -5,7 +5,7 @@ import android.os.Bundle;
 
 public abstract class BaseAuthenticatedActivity extends BaseActivity{
     @Override
-    protected final void onCreate(Bundle savedState){
+    protected void onCreate(Bundle savedState){
         super.onCreate(savedState);
 
         if (!application.getAuth().getUser().isLoggedIn()){
